@@ -838,7 +838,8 @@ overflow: hidden;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function),
+  background-color 250ms var(--timing-function);
   
 }
 
