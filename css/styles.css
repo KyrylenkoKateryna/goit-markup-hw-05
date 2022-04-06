@@ -138,11 +138,9 @@
         height: 4px;
         border-radius: 2px;
         background-color: var(--accent-color);
-        transition: opacity 250ms var(--timing-function);
+        transition: color 250ms var(--timing-function);
       }
-
-
-     
+      
 
      .nav-list .navigate{
       
@@ -183,6 +181,7 @@
         display: flex;
         align-items: center;
         color: var(--primary-text-color); 
+        transition: color 250ms var(--timing-function);
       }
       
       .letter,
@@ -214,7 +213,7 @@
      .comunication{
       padding-top: 32px;
       padding-bottom: 32px;
-      transition: transform 250ms var(--timing-function);
+      transition: color 250ms var(--timing-function);
      }
 
     .comunication:hover,
@@ -282,10 +281,10 @@
     
     /* модальное окно */
 
-    .backdrop .is-hidden{
+    .backdrop.is-hidden{
       opacity: 0;
       pointer-events: none;
-      visibility: hidden;
+      
     }
 
     .backdrop{
@@ -297,11 +296,11 @@
       background: rgba(0, 0, 0, 0.2);
       opacity: 1;
       visibility: visible;
-      transition: opacity 250ms var(--timing-function);
+      transition: opacity 250ms var(--timing-function) visibility 250ms var(--timing-function);
       
     }
 
-    .backdrop .is-hidden .backdrop-form{
+    .backdrop.is-hidden .backdrop-form{
       transform: translate(-50%, -50%);
       scale: (0.9);
     }
@@ -326,8 +325,8 @@ transition: transform 250ms var(--timing-function);
   border: 0;
   padding: 0;
   
-  background-color: var(--title-text-color);
-
+  background-color: var(--accent-bgc-folio);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
   transition: transform 250ms var(--timing-function);
@@ -337,9 +336,6 @@ transition: transform 250ms var(--timing-function);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-bgc-folio);
-  fill: currentColor;
-  color: #2196F3;
 }
 
     /* cекция 2 */
@@ -557,12 +553,13 @@ padding: 0px;
   }
 
  
-  .social-things{
+  .social-things {
     justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: transform 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function),  background-color 250ms var(--timing-function);
+
   }
    
   .social-things:hover,
@@ -592,6 +589,7 @@ padding: 0px;
   border: 1px solid var(--accent-color-networks);
   border-radius: 4px;
   color:var(--accent-color-networks);
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 
@@ -698,7 +696,8 @@ padding: 0px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: transform 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
   }
    
   .social-thing:hover,
@@ -720,7 +719,6 @@ padding: 0px;
       justify-content: center;
       padding: 0px;
       margin-bottom: 50px;
-      transition: transform 250ms var(--timing-function);
     }
     
     .social-links .links-item:not(:last-child){
@@ -743,6 +741,9 @@ padding: 0px;
       cursor: pointer;
       padding: 6px 22px;
       font-weight: 500;
+      transition: color 250ms var(--timing-function),
+      background-color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
       }
     
      .social-links .btn-links:hover,
@@ -750,7 +751,7 @@ padding: 0px;
     {
     color:var(--accent-color-second);
     background-color:var(--accent-color);
-    box-shadow:var(--shadow-area-portfolio);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
     }
     
